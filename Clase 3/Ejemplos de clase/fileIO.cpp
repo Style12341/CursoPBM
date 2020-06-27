@@ -21,6 +21,14 @@ int main() {
         cout<< textoArchivo<<endl;
     }
     
+    //getline(miArchivoALeer, textoArchivo); // Guardo el texto desde adentro del archivo
+
+    int i = 0;
+    while (getline(miArchivoALeer, textoArchivo))
+    {
+        cout<< textoArchivo << endl;
+    }
+
     miArchivoALeer.close();
 
     return 0;
